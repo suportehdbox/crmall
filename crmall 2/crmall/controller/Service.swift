@@ -18,7 +18,7 @@ class Service {
     
     func gettvShows(callback: @escaping (([TVShow]) -> Void)) {
         DispatchQueue.global(qos: .userInitiated).async {
-            let urlConsome = "https://api.themoviedb.org/3/tv/popular?api_key=\(self.apiKey)&language=pt-BR"
+            let urlConsome = "https://api.themoviedb.org/3/tv/popular?api_key=\(self.apiKey)&language=pt-BR&page=1"
             print(urlConsome)
             guard let url = URL(string:urlConsome ) else {return}
             let task = URLSession.shared.dataTask(with: url) { (data, response, error) in

@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D549FD75254B4C65000E6D1D /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549FD74254B4C65000E6D1D /* Service.swift */; };
 		D549FD78254B4CDD000E6D1D /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = D549FD77254B4CDD000E6D1D /* Movie.swift */; };
 		D54E5349254B4A8600B51F14 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54E5348254B4A8600B51F14 /* AppDelegate.swift */; };
 		D54E534B254B4A8600B51F14 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54E534A254B4A8600B51F14 /* SceneDelegate.swift */; };
@@ -40,7 +39,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D549FD74254B4C65000E6D1D /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		D549FD77254B4CDD000E6D1D /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		D54E5345254B4A8600B51F14 /* crmall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = crmall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D54E5348254B4A8600B51F14 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -89,7 +87,6 @@
 		D549FD73254B4C3A000E6D1D /* controller */ = {
 			isa = PBXGroup;
 			children = (
-				D549FD74254B4C65000E6D1D /* Service.swift */,
 			);
 			path = controller;
 			sourceTree = "<group>";
@@ -318,7 +315,6 @@
 				D54E5349254B4A8600B51F14 /* AppDelegate.swift in Sources */,
 				D549FD78254B4CDD000E6D1D /* Movie.swift in Sources */,
 				D5ED6783254C5FB000A5A7A1 /* Variables.swift in Sources */,
-				D549FD75254B4C65000E6D1D /* Service.swift in Sources */,
 				D54E537B254B4B3C00B51F14 /* MovieTableViewCell.swift in Sources */,
 				D54E534B254B4A8600B51F14 /* SceneDelegate.swift in Sources */,
 				D5ED6781254C5EDE00A5A7A1 /* DetailViewController.swift in Sources */,

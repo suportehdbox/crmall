@@ -21,8 +21,6 @@ class ViewController: UIViewController {
     }
     var selectedTVShow: TVShow?
     
-    var img: UIImage?
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         Service.shared.gettvShows { tvShows in
@@ -36,7 +34,6 @@ class ViewController: UIViewController {
         if segue.identifier == "toDetail" {
             if let nextViewController = segue.destination as? DetailViewController {
                 nextViewController.tvShow = self.selectedTVShow
-                nextViewController.img = self.img
             }
         }
     }
@@ -63,7 +60,6 @@ extension ViewController: UITableViewDataSource, UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         self.selectedTVShow = self.tvShows[indexPath.row]
         self.performSegue(withIdentifier: "toDetail", sender: nil)
-        self.img = (tableView.cellForRow(at: indexPath) as! MovieTableViewCell).posterImage.image
 //        Variables.originalTitle = DataSource.dataSourceCode[indexPath.row][0]
 //        Variables.genresName = DataSource.dataSourceCode[indexPath.row][1]
 //        Variables.overview = DataSource.dataSourceCode[indexPath.row][2]
